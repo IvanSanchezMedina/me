@@ -1,0 +1,28 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Carpetas de dependencias
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos de compilación
+dist/
+build/
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/
+
+# Logs
+logs/
+*.log
