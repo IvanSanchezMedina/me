@@ -112,6 +112,20 @@ El portafolio está optimizado para:
 - Transiciones CSS optimizadas
 - Fuentes pre-cargadas
 
+## CV descargable
+
+El botón **Descargar CV** de la presentación descarga `output/pdf/Ivan_Sanchez_Medina_CV.pdf`.
+El documento incluye experiencia laboral, proyectos, habilidades y formación en dos páginas.
+
+Para actualizarlo, edita el contenido en `scripts/generate_cv.py` y regenera el PDF:
+
+```bash
+python3 -m pip install reportlab
+python3 scripts/generate_cv.py
+```
+
+Sube el PDF regenerado junto con los cambios del portafolio.
+
 ## 📄 Licencia
 
 Este proyecto es de código abierto y está disponible bajo la licencia MIT.
