@@ -8,8 +8,8 @@ Visita el portafolio en vivo: [https://ivansanchezmedina.github.io/Portfolio](ht
 
 ## 📋 Características
 
-- ✨ Diseño moderno con glassmorphism
-- 🎨 Tema oscuro elegante
+- ✨ Tarjetas grafito y acentos de color sólidos
+- 🎨 Paleta carbón y ámbar
 - 📱 Totalmente responsive
 - 🚀 Animaciones suaves
 - ⚡ Optimizado para rendimiento
@@ -82,9 +82,10 @@ Los colores principales se definen en las variables CSS en `styles.css`:
 
 ```css
 :root {
-    --primary: #6366f1;
-    --secondary: #ec4899;
-    --accent: #14b8a6;
+    --primary: #e8a44b;
+    --bg-primary: #171a1b;
+    --surface: #24292c;
+    --text-primary: #f3f0e8;
     /* ... más colores */
 }
 ```
