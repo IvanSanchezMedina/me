@@ -1,0 +1,23 @@
+{
+  "name": "ivan-sanchez-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others --names TAILWIND,ICONS,VITE --prefix-colors yellow,magenta,cyan \"npm:dev:css\" \"npm:dev:icons\" \"npm:dev:server\"",
+    "dev:css": "tailwindcss -i ./src/input.css -o ./styles.css --watch",
+    "dev:icons": "esbuild ./src/icons.js --bundle --minify --format=iife --outfile=./assets/vendor/lucide-icons.js --watch",
+    "dev:server": "vite --host 127.0.0.1",
+    "build": "npm run build:css && npm run build:icons",
+    "build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify",
+    "build:icons": "esbuild ./src/icons.js --bundle --minify --format=iife --outfile=./assets/vendor/lucide-icons.js",
+    "preview": "vite --host 127.0.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4",
+    "tailwindcss": "3.4.17",
+    "vite": "^6.4.3"
+  },
+  "dependencies": {
+    "lucide": "^1.47.0"
+  }
+}

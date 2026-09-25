@@ -31,12 +31,12 @@ styles = {
     'name': ParagraphStyle('name', fontName=BOLD, fontSize=24, leading=28, textColor=INK, spaceAfter=5),
     'subtitle': ParagraphStyle('subtitle', fontName=BOLD, fontSize=12, leading=16, textColor=ACCENT, spaceAfter=7),
     'contact': ParagraphStyle('contact', fontName=FONT, fontSize=9, leading=13, textColor=MUTED),
-    'section': ParagraphStyle('section', fontName=BOLD, fontSize=11, leading=15, textColor=ACCENT, spaceBefore=12, spaceAfter=6, keepWithNext=True),
-    'body': ParagraphStyle('body', fontName=FONT, fontSize=10, leading=14, textColor=INK, spaceAfter=5),
+    'section': ParagraphStyle('section', fontName=BOLD, fontSize=11, leading=15, textColor=ACCENT, spaceBefore=10, spaceAfter=6, keepWithNext=True),
+    'body': ParagraphStyle('body', fontName=FONT, fontSize=9.5, leading=13, textColor=INK, spaceAfter=5),
     'job': ParagraphStyle('job', fontName=BOLD, fontSize=10.5, leading=14, textColor=INK, spaceAfter=2, keepWithNext=True),
     'meta': ParagraphStyle('meta', fontName=FONT, fontSize=9, leading=12, textColor=MUTED, spaceAfter=4, keepWithNext=True),
-    'bullet': ParagraphStyle('bullet', fontName=FONT, fontSize=10, leading=13.5, textColor=INK, leftIndent=10, firstLineIndent=-8, spaceAfter=2),
-    'skill': ParagraphStyle('skill', fontName=FONT, fontSize=10, leading=14, textColor=INK, spaceAfter=6),
+    'bullet': ParagraphStyle('bullet', fontName=FONT, fontSize=9.5, leading=12.5, textColor=INK, leftIndent=10, firstLineIndent=-8, spaceAfter=2),
+    'skill': ParagraphStyle('skill', fontName=FONT, fontSize=9.5, leading=13, textColor=INK, spaceAfter=6),
 }
 
 story = []
@@ -69,70 +69,66 @@ story += [
 ]
 
 section('Perfil profesional')
-story.append(p('Desarrollador Full Stack con trayectoria desde 2019, especializado en PHP y Laravel. '
-               'Experiencia en aplicaciones web, APIs, servidores y sistemas empresariales. '
-               'Responsable del desarrollo y la operación de TI en Akaya Media, con experiencia '
-               'en reconstrucción de plataformas, automatización de procesos y supervisión de una persona.'))
+story.append(p('Desarrollo web desde 2019, con especialización en PHP y Laravel. Experiencia en '
+               'integración de sistemas, infraestructura y operación de TI; liderazgo técnico, '
+               'coordinación de equipos y automatización de procesos. Uso de IA como apoyo al desarrollo de software.'))
 
 section('Experiencia laboral')
-job('Full Stack Developer', 'Akaya Media', 'May. 2024 - Actualidad', [
-    'Responsable del desarrollo web, administración de APIs, gestión de servidores y mantenimiento del área de TI.',
-    'Reconstrucción de la plataforma desde cero con Laravel; optimización del sistema, actualización de APIs y servidores, mejora de la interfaz y automatización de procesos.',
-    'Desarrollo de la nueva versión con una persona a mi cargo.',
-], 'Remoto | Monterrey, Nuevo León')
+job('Desarrollador principal', 'Akaya Media', 'May. 2024 - Actualidad', [
+    'Desarrollo web y de APIs. Reconstrucción de Laravel 6 a Laravel 12 con un rediseño completo en colaboración con diseñadores mediante Figma.',
+    'Integración de PayPal, Stripe y Piano.io; automatización de procesos y administración de Google Cloud, Google Console, servidores y ambientes de pruebas y staging.',
+    'Supervisión de un desarrollador y participación en entrevistas. Coordinación con Trello, ClickUp y Discord; uso previo de Azure.',
+], 'Remoto')
 job('Software Engineer PHP', 'Codebay', 'Nov. 2022 - May. 2024', [
-    'Implementación de módulos en Laravel y desarrollo de sistemas web según las necesidades del cliente.',
-    'Integración de APIs REST, SOAP y servicios externos; actualización y mantenimiento de sistemas.',
-])
-job('Analista Programador', 'alaya | agente de fianzas y seguros', 'Ago. 2021 - Nov. 2022', [
-    'Gestión del área de TI, integración y administración de Salesforce y administración de sistemas.',
-    'Soporte técnico y participación como instructor y Product Owner.',
-], 'Guadalajara, Jalisco')
+    'Software a medida y nuevos módulos con distintas versiones de Laravel; React en algunos proyectos.',
+    'Integración de APIs REST y SOAP, servicios de terceros y pasarelas de pago. Trabajo con Azure, Scrum y Slack.',
+], 'Remoto')
+job('Analista Programador / Responsable de TI', 'alaya', 'Ago. 2021 - Nov. 2022', [
+    'Implementación de Salesforce como Product Owner con un equipo de Argentina y configuración de soluciones a medida.',
+    'Gestión de TI y dispositivos, desarrollo e instrucción en tecnología, seguridad y herramientas. Coordinación de la renovación web con desarrolladores externos.',
+], 'Híbrido | Guadalajara')
 job('Desarrollador web', 'Sitio Random Marketing Digital', 'Ago. 2020 - Ago. 2021', [
-    'Desarrollo web con Laravel y actualización de sitios en WordPress según las necesidades del cliente.',
-    'Administración de hosting y gestión del área de TI.',
-], 'México')
-job('Desarrollador web', 'Importserv Internationals', 'Ago. 2019 - Jun. 2020', [
-    'Desarrollo de aplicaciones web y modificación y actualización de puntos de venta.',
-    'Mantenimiento de equipos de cómputo y gestión de inventario en tiendas.',
-], 'México')
+    'Desarrollo Laravel e integración con Mercado Libre, Liverpool, Walmart, Claro Shop, Sears y Shopify; supervisión de desarrolladores y atención directa a clientes.',
+    'Implementación de diseños, renovación y mantenimiento de WordPress y administración de hosting y servidores. Scrum, Slack y Asana.',
+], 'Presencial')
+job('Desarrollador / Soporte técnico', 'Importserv Internationals', 'Ago. 2019 - Jun. 2020', [
+    'Sistemas de inventario en PHP y puntos de venta de escritorio en Pascal con Lazarus.',
+    'Mantenimiento de equipos, reparación de impresoras e inventarios en tiendas de distintos estados; soporte a DS Factura.',
+], 'Presencial')
 
 story.append(PageBreak())
-story += [p('Iván Sánchez Medina', 'subtitle'), p('Full Stack Developer | Proyectos y competencias', 'contact')]
+story += [p('Iván Sánchez Medina', 'subtitle'), p('Colaboraciones, proyectos y competencias', 'contact')]
+section('Colaboración externa | Independiente del empleo')
+job('Desarrollador externo', 'Kinali Works', 'Colaboración por proyecto', [
+    'Renovación del sitio del estudio y desarrollo del sitio oficial del videojuego Alma Stone con Next.js y Vite. Implementación individual en coordinación con el equipo de Kinali para gestionar los cambios.',
+    'Migración de ambos proyectos a nuevos servidores.',
+])
 section('Proyectos destacados')
 
-def project(name, tech, url, role, description):
+def project(name, tech, url, description):
     story.append(KeepTogether([
         p(f'{name} | {tech}', 'job'),
-        p(role + ' | ' + link(url, url.replace('https://', '').rstrip('/')), 'meta'),
-        p(description), Spacer(1, 9),
+        p(link(url, url.replace('https://', '').rstrip('/')), 'meta'),
+        p(description), Spacer(1, 4),
     ]))
 
-project('Akaya', 'Laravel', 'https://akaya.io/',
-        'Responsable del desarrollo; una persona a mi cargo',
-        'Reconstruí desde cero la plataforma de webcómics en una versión completamente nueva. '
-        'Optimicé el sistema, actualicé las APIs y los servidores, mejoré la interfaz de usuario '
-        'y automaticé procesos.')
+project('Akaya', 'Laravel 12', 'https://akaya.io/',
+        'Reconstrucción de la plataforma de webcómics: nueva interfaz, optimización del sistema, APIs, pagos e infraestructura. Desarrollo principal con un desarrollador a cargo.')
 project('Alma Stone', 'Vite', 'https://almastonegame.com/',
-        'Desarrollo individual',
-        'Creé desde cero el sitio oficial para un videojuego aún en desarrollo. '
-        'Me encargué de toda la implementación web para presentar el proyecto.')
+        'Sitio oficial creado desde cero para presentar un videojuego en desarrollo. Colaboración externa con el equipo de Kinali.')
 project('Kinali Works', 'Next.js', 'https://kinaliworks.com/',
-        'Desarrollo individual',
-        'Reconstruí el sitio del estudio de videojuegos y lo migré de WordPress a Next.js. '
-        'Modernicé la interfaz y los elementos visuales manteniendo la esencia y la identidad originales.')
+        'Migración de WordPress a Next.js y renovación visual del sitio del estudio, conservando su identidad. Colaboración externa.')
 project('GOCO', 'Laravel', 'https://goco.mx/',
-        'Desarrollo individual',
-        'Desarrollé desde cero una plataforma para conectar canales de e-commerce y centralizar '
-        'la gestión de ventas. Implementé el control de almacenes, inventarios y productos en un solo lugar.')
+        'Desarrollo individual desde cero de una plataforma que conecta canales de e-commerce y centraliza ventas, productos, inventarios y almacenes.')
 
-section('Habilidades técnicas')
+section('Competencias técnicas')
 for category, skills in [
-    ('Backend y APIs', 'PHP, Laravel, Node.js, Express.js, APIs REST, SOAP.'),
-    ('Frontend', 'JavaScript, React, Next.js, Vite, HTML5, CSS3, Tailwind CSS, Bootstrap, jQuery, Sass.'),
-    ('Bases de datos', 'MySQL, SQL, MongoDB.'),
-    ('Infraestructura y control de versiones', 'Gestión de servidores, Linux, cPanel, AWS, Azure, Git, GitHub, GitLab.'),
-    ('Plataformas y trabajo en equipo', 'WordPress, Salesforce, Jetstream, Inertia, Scrum, Jira.'),
+    ('Backend e integraciones', 'PHP, Laravel, Node.js, Express, REST, SOAP, PayPal, Stripe, Piano.io.'),
+    ('Frontend', 'JavaScript, React, Next.js, Vite, HTML, CSS, Tailwind CSS, Bootstrap, jQuery, Sass.'),
+    ('Datos e infraestructura', 'MySQL, SQL, MongoDB, Google Cloud, Azure, AWS, Linux, cPanel, servidores, ambientes de pruebas y staging.'),
+    ('Plataformas y herramientas', 'Salesforce, WordPress, Pascal, Lazarus, Git, GitHub, GitLab, Figma.'),
+    ('Desarrollo asistido por IA', 'Codex, Claude y otras herramientas de inteligencia artificial orientadas al desarrollo de software.'),
+    ('Colaboración', 'Scrum, Trello, ClickUp, Asana, Jira, Slack y Discord. Liderazgo técnico, Product Ownership y capacitación.'),
 ]:
     story.append(p(f'<b>{category}:</b> {skills}', 'skill'))
 

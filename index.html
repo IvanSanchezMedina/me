@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="lime">
 
 <head>
     <meta charset="UTF-8">
@@ -8,529 +8,350 @@
         content="Iván Sánchez, Full Stack Developer especializado en PHP y Laravel. Desarrollo web, administración de APIs, gestión de servidores y operación de TI.">
     <meta name="author" content="Iván Sánchez">
     <title>Iván Sánchez - Full Stack Developer | PHP y Laravel</title>
-    <link rel="stylesheet" href="styles.css?v=charcoal-amber-1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="styles.css?v=tailwind-fonts-1">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
 </head>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="#hero" class="logo">IS</a>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#experience">Experiencia</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </nav>
+<body class="antialiased  mx-auto">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hola, soy <span class="gradient-text">Iván Sánchez</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Full Stack Developer · PHP y Laravel</h2>
-                    <p class="hero-description">
-                        Desarrollo aplicaciones web de principio a fin, administro APIs y gestiono servidores.
-                        Actualmente estoy a cargo del desarrollo y la operación del área de TI en Akaya Media.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contáctame</a>
-                        <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
-                        <a href="output/pdf/Ivan_Sanchez_Medina_CV.pdf" class="btn btn-secondary"
-                            download="Ivan_Sanchez_Medina_CV.pdf" type="application/pdf">Descargar CV</a>
-                    </div>
-                    <div class="hero-social">
-                        <a href="https://github.com/IvanSanchezMedina" target="_blank" rel="noopener noreferrer"
-                            class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ivansanchezmedina/" target="_blank" rel="noopener noreferrer"
-                            class="social-link" aria-label="LinkedIn de Iván Sánchez Medina (abre en una pestaña nueva)">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v1a6 6 0 0 1 2-2z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                        </a>
-                        <a href="mailto:ivanusanchezm@gmail.com" class="social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-card">
-                    <p class="about-text">
-                        Soy desarrollador Full Stack y desde 2019 creo aplicaciones web y sistemas empresariales.
-                        Me especializo en PHP y Laravel, y también he desarrollado sitios con Vite y Next.js.
-                        Mi trabajo abarca la interfaz de usuario, el backend, las APIs y la gestión de servidores.
-                    </p>
-                    <p class="about-text">
-                        Actualmente soy responsable del desarrollo y la operación del área de TI en Akaya Media,
-                        donde reconstruí la plataforma desde cero, automaticé procesos y tuve una persona a mi cargo.
-                        También he creado una plataforma para centralizar ventas de e-commerce y modernizado
-                        sitios web, como la migración de Kinali Works de WordPress a Next.js.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">2019</div>
-                            <div class="stat-label">Inicio de mi trayectoria</div>
+    <header class="site-header sticky top-0 z-50 border-b border-ink/15 bg-coal/95 text-ink backdrop-blur-md">
+        <nav aria-label="Navegación principal"
+            class="mx-auto flex max-w-[100rem] flex-wrap items-center justify-between gap-x-4 gap-y-2 px-5 py-3 sm:px-10 lg:px-14">
+            <a href="#hero" data-scroll-duration="1400" aria-label="Iván Sánchez - Inicio" class="brand-capsule">
+                <span class="brand-orb">IS</span><span aria-hidden="true">↗</span>
+            </a>
+            <button type="button" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false"
+                aria-controls="site-navigation" hidden>
+                <span data-menu-label>Menú</span><span class="menu-toggle-icon"
+                    aria-hidden="true"><span></span><span></span></span>
+            </button>
+            <div id="site-navigation"
+                class="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 font-mono text-[10px] uppercase sm:gap-x-7 sm:text-xs">
+                <a href="#hero" data-scroll-duration="1400"
+                    class="moving-underline-link hidden py-3 transition-colors hover:text-accent sm:block"><span
+                        class="moving-underline">Inicio</span></a>
+                <a href="#about" data-scroll-duration="1400" data-scroll-offset="100"
+                    class="moving-underline-link py-3 transition-colors hover:text-accent"><span
+                        class="moving-underline">Sobre mí</span></a>
+                <a href="#experience" data-scroll-duration="1400" data-scroll-offset="100"
+                    class="moving-underline-link py-3 transition-colors hover:text-accent"><span
+                        class="moving-underline">Experiencia</span></a>
+                <a href="#projects" data-scroll-duration="1400" data-scroll-offset="100"
+                    class="moving-underline-link py-3 transition-colors hover:text-accent"><span
+                        class="moving-underline">Proyectos</span></a>
+                <a href="mailto:ivanusanchezm@gmail.com"
+                    class="moving-underline-link py-3 transition-colors hover:text-accent"><span
+                        class="moving-underline">Hablemos ↗</span></a>
+                <details id="theme-picker" class="relative normal-case">
+                    <summary
+                        class="theme-toggle flex min-h-11 items-center gap-2 rounded-full border border-ink/25 px-3 transition-colors hover:border-accent hover:text-accent"
+                        aria-label="Cambiar color del sitio">
+                        <span class="h-3 w-3 rounded-full bg-accent" aria-hidden="true"></span>Color
+                        <span class="theme-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div
+                        class="theme-panel absolute right-0 top-full mt-3 w-64 rounded-2xl border border-ink/20 bg-coal p-4 shadow-xl">
+                        <p class="mb-3 text-[10px] uppercase tracking-widest text-muted">Elige tu acento</p>
+                        <div class="grid gap-1" role="group" aria-label="Colores del sitio">
+                            <button type="button" data-theme-choice="lime" aria-pressed="true"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="lime" aria-hidden="true"></span>Lime<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="bright-indigo" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="bright-indigo" aria-hidden="true"></span>Bright Indigo<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="spring-green" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="spring-green" aria-hidden="true"></span>Spring Green<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="banana-cream" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="banana-cream" aria-hidden="true"></span>Banana Cream<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="tomato" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="tomato" aria-hidden="true"></span>Tomato<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="medium-slate-blue" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="medium-slate-blue" aria-hidden="true"></span>Medium Slate Blue<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="night-bordeaux" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="night-bordeaux" aria-hidden="true"></span>Night Bordeaux<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
+                            <button type="button" data-theme-choice="deep-navy" aria-pressed="false"
+                                class="theme-option flex min-h-11 w-full items-center gap-3 rounded-lg px-3 text-left text-xs transition-colors hover:bg-ink/10">
+                                <span class="theme-swatch h-5 w-5 shrink-0 rounded-full" data-theme="deep-navy" aria-hidden="true"></span>Deep Navy<span class="theme-check ml-auto" aria-hidden="true">✓</span>
+                            </button>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">4</div>
-                            <div class="stat-label">Proyectos destacados</div>
+                        <form id="custom-theme-form" class="custom-theme-form" novalidate>
+                            <label for="custom-theme-color">Color personalizado</label>
+                            <div class="custom-theme-controls">
+                                <input id="custom-theme-color" type="text" placeholder="#A3E52C" maxlength="7" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="custom-theme-help">
+                                <button type="submit">Aplicar</button>
+                            </div>
+                            <p id="custom-theme-help" aria-live="polite">Usa 3 o 6 dígitos: #ABC o #A3E52C.</p>
+                        </form>
+                        <p id="theme-status" class="sr-only" role="status"></p>
+                    </div>
+                </details>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="hero" aria-label="Presentación"
+        class="relative mx-auto grid min-h-svh items-center gap-12 overflow-hidden px-5 py-10 sm:px-10 lg:grid-cols-[1.2fr_1fr] lg:gap-8 lg:px-14 lg:py-16">
+        <div class="relative z-10 flex min-w-0 flex-col [container-type:inline-size]">
+            <h1 id="name" class="mb-12 font-display text-[5cqw] uppercase tracking-wide sm:mb-16">
+                Iván Sánchez
+            </h1>
+            <div class="mb-10">
+                <p class="mb-2 font-mono text-[10px] uppercase tracking-wide text-muted">Hora local / Guadalajara</p>
+                <div class="flex flex-wrap items-end gap-x-5 gap-y-4">
+                    <time id="hero-local-time"
+                        class="font-sans text-[22cqw] font-bold leading-[0.85] tracking-[-0.06em] tabular-nums"
+                        aria-label="Hora actual en Guadalajara">--:--</time>
+                    <span class="pb-1 font-mono text-[10px] uppercase leading-relaxed text-muted">México<br>America /
+                        Mexico City</span>
+                </div>
+                <p class="mt-6 text-[clamp(1.6rem,5.7cqw,3.5rem)] leading-[1.15] tracking-tight">
+                    Full Stack Developer.<br>De la interfaz al servidor.
+                    <span
+                        class="inline-flex translate-y-1 flex-col align-top font-mono text-[10px] leading-[1.5] tracking-normal text-muted sm:text-xs">
+                        <span>Desarrollo integral</span>
+                        <span aria-hidden="true">↳ <span id="hero-specialty"
+                                class="inline-block min-w-[10ch] text-accent">WEB</span></span>
+                        <span class="sr-only">Web, APIs y servidores.</span>
+                    </span>
+                </p>
+                <p class="mt-8 font-mono text-[10px] uppercase leading-relaxed tracking-wide text-muted sm:text-xs">
+                    Guadalajara, México → Trabajo remoto<br>Desarrollo & TI / Akaya Media</p>
+            </div>
+            <div id="description" data-typewriter data-trigger="manual" data-speed="40" data-delay="600"
+                class="grid gap-6 border-t border-ink/20 pt-6 sm:grid-cols-[1fr_auto] sm:items-end">
+                <div class="max-w-xs">
+                    <p class="text-base leading-relaxed text-ink sm:text-lg">De la idea al producto.<br>Desarrollo web
+                        de principio a fin.</p>
+                    <p data-typewriter-line
+                        class="mt-4 font-mono text-[10px] uppercase leading-relaxed tracking-wide text-muted">
+                        Actualmente
+                        / Desarrollo & TI<br> Akaya Media</p>
+                </div>
+                <div class="flex flex-wrap gap-3 sm:justify-self-end">
+
+                    <a href="mailto:ivanusanchezm@gmail.com" class="group inline-flex items-center gap-3 justify-self-start
+                        font-mono text-xs uppercase tracking-wide text-ink
+                        transition-colors hover:text-accent">
+                        <span class="relative
+                            after:content-[''] after:absolute after:left-0 after:-bottom-1
+                            after:h-px after:w-full after:bg-current
+                            after:scale-x-0 after:origin-right
+                            after:transition-transform after:duration-300 after:ease-in-out
+                            group-hover:after:origin-left group-hover:after:scale-x-100
+                            group-focus-visible:after:origin-left
+                            group-focus-visible:after:scale-x-100
+                            motion-reduce:after:transition-none">
+                            Hablemos
+                        </span>
+
+                        <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i>
+                    </a>
+                    <!-- <a href="#about" data-scroll-duration="1400" data-scroll-offset="80"
+                        class="relative isolate overflow-hidden inline-flex group items-center gap-3 justify-self-start font-mono text-xs uppercase tracking-wide bg-accent text-black px-2 py-1 rounded-full
+                        border-2 border-accent  active:ring-2 active:ring-accent  transition-colors hover:bg-black hover:text-white focus-visible:bg-black focus-visible:text-white
+                        before:content-[''] before:shadow-[inset_0_4px_9px_rgba(0,0,0,.55)] before:pointer-events-none before:absolute before:inset-0 before:bg-accent before:translate-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:-translate-x-full focus-visible:before:-translate-x-full motion-reduce:before:transition-none">
+                        <span class="relative z-10">Sobre mí</span>
+                        <span class="relative z-10 p-2 rounded-full bg-black text-white group-hover:bg-gray-800 group-focus-visible:bg-gray-800 transition-colors duration-300 motion-reduce:transition-none">
+                            <i data-lucide="corner-right-down" class="w-4 h-4 rotate-90 group-hover:rotate-0 group-focus-visible:rotate-0 transition-transform duration-500 motion-reduce:transition-none" aria-hidden="true"></i>
+                        </span>
+
+                    </a> -->
+                    <a href="#about" data-scroll-duration="1400" data-scroll-offset="80"
+                        class="relative isolate overflow-hidden inline-flex group items-center gap-3 justify-self-start font-mono text-xs uppercase tracking-wide bg-accent text-black px-2 py-1 rounded-full
+                        border-2 border-accent   transition-colors 
+                        before:content-[''] active:shadow-[inset_0_4px_9px_rgba(0,0,0,.55)]  before:pointer-events-none before:absolute before:inset-0 before:bg-accent before:translate-x-0 before:transition-transform 
+                        before:duration-300 before:ease-in-out hover:before:-translate-x-full focus-visible:before:-translate-x-full motion-reduce:before:transition-none">
+                        <span class="relative z-10">Sobre mí</span>
+                        <span
+                            class="relative z-10 p-2 rounded-full bg-black text-white  group-focus-visible:bg-gray-800 transition-colors duration-300 motion-reduce:transition-none">
+                            <i data-lucide="corner-right-down"
+                                class="w-4 h-4 rotate-90 group-hover:rotate-0 group-focus-visible:rotate-0 transition-transform duration-500 motion-reduce:transition-none"
+                                aria-hidden="true"></i>
+                        </span>
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex min-w-0 items-center justify-center py-12 lg:py-0">
+            <div id="companion-home"
+                class="relative mx-auto aspect-[1.9/1] w-[90%] max-w-[42rem] [container-type:inline-size]">
+                <div id="hero-capsule"
+                    class="absolute inset-0 flex rotate-45 items-center rounded-full border-[2cqw] border-accent bg-accent p-[2cqw] shadow-[inset_0_4px_9px_rgba(0,0,0,.55)]">
+                    <a id="hero-capsule-button" href="#description" data-scroll-duration="1400"
+                        data-scroll-position="0.45" aria-label="Conocer más sobre Iván"
+                        class="flex h-full w-auto aspect-square shrink-0 items-center justify-center rounded-full bg-black
+                         text-white shadow-lg shadow-gray-900 transition-transform duration-300 hover:scale-105 focus-visible:scale-105 motion-reduce:transition-none">
+                        <i data-lucide="arrow-left" class="h-[34%] w-[34%] -rotate-45" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div data-arc-transition class="arc-transition" aria-hidden="true">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" focusable="false">
+            <path data-arc-path d="M0 100 Q500 -100 1000 100 L1000 101 L0 101 Z" />
+        </svg>
+    </div>
+
+    <section id="about" class="bg-ink px-5 pb-20 pt-8 text-coal sm:px-10 lg:px-14 lg:pb-28 lg:pt-12">
+        <div class="mx-auto max-w-[90rem]">
+
+            <header class="companion-section-header relative mb-12 border-t border-coal/20 pt-8 sm:mb-16">
+                <div id="companion-about-dock" class="companion-dock" aria-hidden="true"></div>
+                <div data-about-reveal class="absolute bottom-0 left-0 top-8 flex flex-col items-center gap-4">
+                    <h2
+                        class="rotate-180 whitespace-nowrap font-mono text-[10px] uppercase tracking-[0.2em] [writing-mode:vertical-rl]">
+                        Sobre mí</h2>
+                    <span class="w-px flex-1 bg-coal/30" aria-hidden="true"></span>
+                </div>
+                <div class="pl-10 sm:pl-16">
+                    <p data-about-reveal class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">
+                        Desarrollo web / De principio a fin</p>
+                    <h3 data-about-reveal
+                        class="max-w-5xl text-[clamp(3rem,8vw,8rem)] font-medium leading-[0.95] tracking-[-0.05em]">De
+                        la idea<br>al producto.</h3>
+                    <p data-about-reveal class="mt-8 max-w-2xl text-lg leading-relaxed text-coal/75 sm:text-xl">
+                        Desarrollo aplicaciones web desde 2019, trabajando en interfaces,
+                        lógica de negocio e infraestructura para llevar cada proyecto de la idea a producción.</p>
+                </div>
+            </header>
+            <div class="grid items-stretch gap-5 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.4fr)] lg:gap-6">
+                <aside id="about-profile" data-about-reveal aria-label="Foto y contacto de Iván"
+                    class="relative flex min-w-0 flex-col rounded-[2rem] bg-accent p-6 sm:p-9">
+                    <div class="flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                            <p class="font-mono text-[10px] uppercase tracking-widest">Detrás del código</p>
+                            <p class="mt-5 text-6xl font-medium leading-none tracking-tight sm:text-7xl">Iván</p>
+                            <p class="mt-1 text-2xl">Sánchez</p>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">5</div>
-                            <div class="stat-label">Empresas en mi trayectoria</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Experiencia Laboral</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">May. 2024 - Actualidad</div>
-                        <h3 class="timeline-title">Full Stack Developer</h3>
-                        <p class="timeline-company">
-                            <img class="company-logo" src="assets/companies/akayamedia_logo.jpeg"
-                                alt="" width="64" height="64" loading="lazy" decoding="async">
-                            <span>Akaya Media</span>
-                        </p>
-                        <p class="timeline-details">Jornada completa · Monterrey, Nuevo León, México · En remoto</p>
-                        <ul class="timeline-description">
-                            <li>Responsable del desarrollo y la operación del área de TI</li>
-                            <li>Desarrollo web full stack y mantenimiento de la plataforma</li>
-                            <li>Administración y mantenimiento de APIs</li>
-                            <li>Gestión de servidores e infraestructura tecnológica</li>
-                            <li>Mantenimiento y actualización de los sistemas de la empresa</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Nov. 2022 - May. 2024</div>
-                        <h3 class="timeline-title">Software Engineer PHP</h3>
-                        <p class="timeline-company">
-                            <img class="company-logo" src="assets/companies/codebayus_logo.jpeg"
-                                alt="" width="64" height="64" loading="lazy" decoding="async">
-                            <span>Codebay</span>
-                        </p>
-                        <ul class="timeline-description">
-                            <li>Implementación de nuevos módulos en Laravel</li>
-                            <li>Integración de APIs REST y SOAP</li>
-                            <li>Desarrollo de sistemas web según necesidades del cliente</li>
-                            <li>Actualización y mantenimiento de sistemas existentes</li>
-                            <li>Integración de diferentes servicios externos</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Ago. 2021 - Nov. 2022</div>
-                        <h3 class="timeline-title">Analista Programador</h3>
-                        <p class="timeline-company">
-                            <img class="company-logo" src="assets/companies/alayamx_logo.jpeg"
-                                alt="" width="64" height="64" loading="lazy" decoding="async">
-                            <span>alaya | agente de fianzas y seguros</span>
-                        </p>
-                        <p class="timeline-details">Jornada completa · Guadalajara, Jalisco, México</p>
-                        <ul class="timeline-description">
-                            <li>Gestión del área de TI de la empresa</li>
-                            <li>Integración y administración de Salesforce</li>
-                            <li>Administración de sistemas</li>
-                            <li>Soporte técnico</li>
-                            <li>Instructor y Product Owner</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Ago. 2020 - Ago. 2021</div>
-                        <h3 class="timeline-title">Desarrollador web</h3>
-                        <p class="timeline-company">
-                            <img class="company-logo company-logo--wide" src="assets/companies/random_logo.png"
-                                alt="" width="112" height="64" loading="lazy" decoding="async">
-                            <span>Sitio Random Marketing Digital</span>
-                        </p>
-                        <p class="timeline-details">Jornada completa · México</p>
-                        <ul class="timeline-description">
-                            <li>Desarrollo de proyectos según necesidades del cliente</li>
-                            <li>Administración de hosting</li>
-                            <li>Desarrollo web con Laravel</li>
-                            <li>Modificación y actualización de páginas web (WordPress)</li>
-                            <li>Gestión del área de TI</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-period">Ago. 2019 - Jun. 2020</div>
-                        <h3 class="timeline-title">Desarrollador web</h3>
-                        <p class="timeline-company">
-                            <img class="company-logo" src="assets/companies/importserver_logo.webp"
-                                alt="" width="64" height="64" loading="lazy" decoding="async">
-                            <span>Importserv Internationals</span>
-                        </p>
-                        <p class="timeline-details">Jornada completa · México</p>
-                        <ul class="timeline-description">
-                            <li>Desarrollo de aplicaciones web</li>
-                            <li>Mantenimiento de equipos de cómputo</li>
-                            <li>Inventario en tiendas</li>
-                            <li>Modificación y actualización de puntos de venta</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Backend</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Laravel</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">API REST</span>
-                        <span class="skill-tag">SOAP</span>
-                        <span class="skill-tag">Express.js</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Frontend</h3>
-                    <div class="skills-list">
-
-                        <span class="skill-tag">Tailwind CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">Sass</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">React</span>
-                        <!-- <span class="skill-tag">Redux</span> -->
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Bases de Datos</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">DevOps & Herramientas</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">GitLab</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">Jira</span>
-                        <span class="skill-tag">cPanel</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">CMS & Frameworks</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">WordPress</span>
-                        <span class="skill-tag">Jetstream</span>
-                        <span class="skill-tag">Inertia</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Otros</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Salesforce</span>
-                        <span class="skill-tag">Mac OS</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Windows</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <a class="project-preview" href="assets/screen_shots/akaya.png" target="_blank" rel="noopener noreferrer"
-                        aria-label="Ver captura completa de Akaya (abre en una pestaña nueva)" title="Ver captura completa">
-                        <img src="assets/screen_shots/akaya.png" alt="Página principal de Akaya con su catálogo de webcómics"
-                            width="1920" height="964" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-brand">
-                        <img src="assets/proyects/akaya_media.jpg" alt="Logo de Akaya"
-                            width="206" height="206" loading="lazy" decoding="async">
-                        <h3 class="project-title">Akaya</h3>
-                    </div>
-                    <p class="project-role">Responsable del desarrollo · Una persona a mi cargo</p>
-                    <p class="project-description">
-                        Reconstruí desde cero la plataforma de webcómics en una versión completamente nueva
-                        con Laravel. Optimicé el sistema, actualicé las APIs y los servidores,
-                        mejoré la interfaz de usuario y automaticé procesos.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Laravel</span>
-                        <span class="project-tag">Webcómics</span>
-                        <span class="project-tag">Automatización</span>
-                    </div>
-                    <a class="project-link" href="https://akaya.io/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Akaya (abre en una pestaña nueva)">Visitar sitio <span
-                            aria-hidden="true">↗</span></a>
-                </div>
-
-                <div class="project-card">
-                    <a class="project-preview" href="assets/screen_shots/alma_stone.png" target="_blank" rel="noopener noreferrer"
-                        aria-label="Ver captura completa de Alma Stone (abre en una pestaña nueva)" title="Ver captura completa">
-                        <img src="assets/screen_shots/alma_stone.png" alt="Página principal de Alma Stone con los personajes del videojuego"
-                            width="1920" height="965" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-brand">
-                        <img src="assets/proyects/alma_stone.jpg" alt="Logo de Alma Stone"
-                            width="150" height="150" loading="lazy" decoding="async">
-                        <h3 class="project-title">Alma Stone</h3>
-                    </div>
-                    <p class="project-role">Desarrollo individual</p>
-                    <p class="project-description">
-                        Creé desde cero el sitio web oficial de Alma Stone con Vite,
-                        para presentar un videojuego que aún se encuentra en desarrollo.
-                        Me encargué de toda la implementación del sitio.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Vite</span>
-                        <span class="project-tag">Videojuegos</span>
-                    </div>
-                    <a class="project-link" href="https://almastonegame.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Alma Stone (abre en una pestaña nueva)">Visitar sitio <span
-                            aria-hidden="true">↗</span></a>
-                </div>
-
-                <div class="project-card">
-                    <a class="project-preview" href="assets/screen_shots/kinali.png" target="_blank" rel="noopener noreferrer"
-                        aria-label="Ver captura completa de Kinali Works (abre en una pestaña nueva)" title="Ver captura completa">
-                        <img src="assets/screen_shots/kinali.png" alt="Página principal del estudio Kinali Works"
-                            width="1920" height="965" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-brand">
-                        <img src="assets/proyects/kinali_works-1.webp" alt="Logo de Kinali Works"
-                            width="2017" height="898" loading="lazy" decoding="async">
-                        <h3 class="project-title">Kinali Works</h3>
-                    </div>
-                    <p class="project-role">Desarrollo individual</p>
-                    <p class="project-description">
-                        Reconstruí el sitio del estudio de videojuegos, migrándolo de WordPress
-                        a Next.js. Modernicé la interfaz y sus elementos visuales,
-                        manteniendo la esencia y la identidad del sitio original.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Next.js</span>
-                        <span class="project-tag">Migración desde WordPress</span>
-                    </div>
-                    <a class="project-link" href="https://kinaliworks.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar Kinali Works (abre en una pestaña nueva)">Visitar sitio <span
-                            aria-hidden="true">↗</span></a>
-                </div>
-
-                <div class="project-card">
-                    <a class="project-preview" href="assets/screen_shots/goco.png" target="_blank" rel="noopener noreferrer"
-                        aria-label="Ver captura completa de GOCO (abre en una pestaña nueva)" title="Ver captura completa">
-                        <img src="assets/screen_shots/goco.png" alt="Panel de GOCO para administrar categorías de productos"
-                            width="1397" height="691" loading="lazy" decoding="async">
-                    </a>
-                    <div class="project-brand">
-                        <img src="assets/proyects/goco_mx.png" alt="Logo de GOCO"
-                            width="362" height="240" loading="lazy" decoding="async">
-                        <h3 class="project-title">GOCO</h3>
-                    </div>
-                    <p class="project-role">Desarrollo individual</p>
-                    <p class="project-description">
-                        Desarrollé desde cero, con Laravel, una plataforma que conecta diferentes
-                        canales de e-commerce para centralizar la gestión de ventas.
-                        Implementé el control de almacenes, inventarios y productos en un solo lugar.
-                    </p>
-                    <div class="project-tags">
-                        <span class="project-tag">Laravel</span>
-                        <span class="project-tag">E-commerce</span>
-                        <span class="project-tag">Gestión de almacenes</span>
-                    </div>
-                    <a class="project-link" href="https://goco.mx/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visitar GOCO (abre en una pestaña nueva)">Visitar sitio <span
-                            aria-hidden="true">↗</span></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Educación</h2>
-            <div class="education-content">
-                <div class="education-card">
-                    <div class="education-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
-                        </svg>
-                    </div>
-                    <div class="education-details">
-                        <h3 class="education-title">Ingeniería en Sistemas Computacionales</h3>
-                        <p class="education-institution">Instituto Tecnológico de Minatitlán</p>
-                        <p class="education-period">2014 - 2019</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-text">
-                        ¿Tienes un proyecto en mente? ¡Me encantaría saber de ti!
-                        Puedes encontrarme en las siguientes plataformas:
-                    </p>
-                    <div class="contact-methods">
-                        <a href="mailto:ivanusanchezm@gmail.com" class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Email</div>
-                                <div class="contact-value">ivanusanchezm@gmail.com</div>
-                            </div>
+                        <a href="output/pdf/Ivan_Sanchez_Medina_CV.pdf" download="Ivan_Sanchez_Medina_CV.pdf"
+                            class="cv-download group absolute right-0 top-0 flex items-center gap-2 mt-4 mr-4">
+                            <span>Descargar CV</span>
+                            <span class="cv-download-icon">
+                                <i data-lucide="download" class="h-4 w-4" aria-hidden="true"></i>
+                            </span>
                         </a>
+                    </div>
 
-                        <a href="https://github.com/IvanSanchezMedina" target="_blank" rel="noopener noreferrer"
-                            class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">GitHub</div>
-                                <div class="contact-value">github.com/IvanSanchezMedina</div>
-                            </div>
-                        </a>
 
-                        <a href="https://www.linkedin.com/in/ivansanchezmedina/" target="_blank" rel="noopener noreferrer"
-                            class="contact-method" aria-label="LinkedIn de Iván Sánchez Medina (abre en una pestaña nueva)">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" aria-hidden="true">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v1a6 6 0 0 1 2-2z" />
-                                    <rect x="2" y="9" width="4" height="12" />
-                                    <circle cx="4" cy="4" r="2" />
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">LinkedIn</div>
-                                <div class="contact-value">Iván Sánchez Medina</div>
-                            </div>
-                        </a>
 
+                    <div class="relative mx-auto my-8">
+                        <span class="pointer-events-none absolute -inset-4 rounded-[2.5rem] border border-coal/20"
+                            aria-hidden="true"></span>
+                        <img src="assets/me.jpeg" alt="Iván Sánchez" width="224" height="224" loading="lazy"
+                            decoding="async"
+                            class="h-48 w-48 rounded-3xl object-cover object-[50%_45%] sm:h-56 sm:w-56">
+                    </div>
+                    <p class="font-mono text-[10px] uppercase tracking-wide text-coal/70">Guadalajara, México / Trabajo
+                        remoto</p>
+                    <address class="mt-6 space-y-3 text-sm not-italic">
+                        <a href="mailto:ivanusanchezm@gmail.com"
+                            class="moving-underline-link block w-fit max-w-full break-words"><span
+                                class="moving-underline">ivanusanchezm@gmail.com</span></a>
                         <a href="https://wa.me/5219221204331" target="_blank" rel="noopener noreferrer"
-                            class="contact-method" aria-label="Contactar a Iván por WhatsApp al +52 922 120 4331 (abre en una pestaña nueva)">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Teléfono / WhatsApp</div>
-                                <div class="contact-value">+52 922 120 4331</div>
-                            </div>
+                            class="moving-underline-link block w-fit max-w-full"
+                            aria-label="WhatsApp de Iván (abre en otra pestaña)">
+                            <span class="mb-1 block font-mono text-[10px] uppercase tracking-wide text-coal/60">Teléfono
+                                / WhatsApp</span>
+                            <span class="moving-underline">+52 922 120 4331</span>
                         </a>
-
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                            </div>
-                            <div>
-                                <div class="contact-label">Ubicación</div>
-                                <div class="contact-value">Guadalajara, Jalisco</div>
+                    </address>
+                    <nav aria-label="Redes sociales de Iván" class="mt-6 flex flex-wrap gap-2">
+                        <a href="https://www.linkedin.com/in/ivansanchezmedina/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn de Iván (abre en otra pestaña)"
+                            class="relative isolate inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-full  bg-accent px-2 py-1 font-mono text-xs uppercase tracking-wide text-black group transition-colors before:pointer-events-none before:absolute before:inset-0 before:bg-accent before:translate-x-0 before:transition-transform before:duration-300 before:ease-in-out before:content-[''] hover:before:-translate-x-full focus-visible:before:-translate-x-full active:shadow-[inset_0_4px_9px_rgba(0,0,0,.55)] motion-reduce:before:transition-none">
+                            <span class="relative z-10">LinkedIn</span>
+                            <span
+                                class="relative z-10 shrink-0 rounded-full bg-black p-2 text-white transition-colors duration-300 group-focus-visible:bg-gray-800 motion-reduce:transition-none">
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 rotate-45 transition-transform duration-500 group-hover:rotate-0 group-focus-visible:rotate-0 motion-reduce:transition-none"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/IvanSanchezMedina" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub de Iván (abre en otra pestaña)"
+                            class="relative isolate inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-full  bg-accent px-2 py-1 font-mono text-xs uppercase tracking-wide text-black group transition-colors before:pointer-events-none before:absolute before:inset-0 before:bg-accent before:translate-x-0 before:transition-transform before:duration-300 before:ease-in-out before:content-[''] hover:before:-translate-x-full focus-visible:before:-translate-x-full active:shadow-[inset_0_4px_9px_rgba(0,0,0,.55)] motion-reduce:before:transition-none">
+                            <span class="relative z-10">GitHub</span>
+                            <span
+                                class="relative z-10 shrink-0 rounded-full bg-black p-2 text-white transition-colors duration-300 group-focus-visible:bg-gray-800 motion-reduce:transition-none">
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 rotate-45 transition-transform duration-500 group-hover:rotate-0 group-focus-visible:rotate-0 motion-reduce:transition-none"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/isanchezm_/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram de Iván (abre en otra pestaña)"
+                            class="relative isolate inline-flex min-h-11 items-center gap-3 overflow-hidden rounded-full  bg-accent px-2 py-1 font-mono text-xs uppercase tracking-wide text-black group transition-colors before:pointer-events-none before:absolute before:inset-0 before:bg-accent before:translate-x-0 before:transition-transform before:duration-300 before:ease-in-out before:content-[''] hover:before:-translate-x-full focus-visible:before:-translate-x-full active:shadow-[inset_0_4px_9px_rgba(0,0,0,.55)] motion-reduce:before:transition-none">
+                            <span class="relative z-10">Instagram</span>
+                            <span
+                                class="relative z-10 shrink-0 rounded-full bg-black p-2 text-white transition-colors duration-300 group-focus-visible:bg-gray-800 motion-reduce:transition-none">
+                                <i data-lucide="arrow-up-right"
+                                    class="h-4 w-4 rotate-45 transition-transform duration-500 group-hover:rotate-0 group-focus-visible:rotate-0 motion-reduce:transition-none"
+                                    aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </nav>
+                </aside>
+                <div
+                    class="flex min-w-0 flex-col justify-center gap-10 rounded-[3rem] bg-coal px-6 py-14 text-ink sm:rounded-[6rem] sm:px-12 sm:py-20 xl:rounded-[12rem] xl:px-16">
+                    <div data-about-reveal class="text-center">
+                        <p class="font-mono text-xs uppercase tracking-widest text-accent">Enfoque & experiencia</p>
+                        <h3 class="mt-6 text-3xl font-medium leading-tight tracking-tight sm:text-4xl xl:text-5xl">
+                            Interfaces, lógica<br>e infraestructura.</h3>
+                    </div>
+                    <p data-about-reveal class="mx-auto max-w-lg text-center text-lg leading-relaxed text-ink/75">Mi
+                        experiencia abarca plataformas de e-commerce, integración de APIs,
+                        automatización de procesos y modernización de sistemas. Uso de IA como apoyo al desarrollo,
+                        principalmente Codex, Claude y otras herramientas enfocadas en software.</p>
+                    <ul data-about-reveal aria-label="Tecnologías y áreas de trabajo"
+                        class="flex flex-wrap justify-center gap-2 pt-2 font-mono text-xs">
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Web</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">PHP</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Laravel</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Next.js</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Vite</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">APIs</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Servidores</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">E-commerce</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Codex</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">Claude</li>
+                        <li class="rounded-full border border-ink/25 bg-ink/5 px-4 py-2">IA para desarrollo</li>
+                    </ul>
+                    <div class="grid grid-cols-1 gap-8 border-t border-ink/20 pt-8 text-center sm:grid-cols-3">
+                        <div data-about-reveal data-typewriter data-trigger="manual" data-speed="65" data-delay="250"
+                            data-pause="100" class="space-y-2">
+                            <div data-typewriter-line class="font-display text-2xl text-accent xl:text-3xl">2019</div>
+                            <div data-typewriter-line class="font-mono text-xs text-ink/60">Inicio de trayectoria</div>
+                        </div>
+                        <div data-about-reveal data-typewriter data-trigger="manual" data-speed="65" data-delay="250"
+                            data-pause="100" class="space-y-2">
+                            <div data-typewriter-line class="font-display text-2xl text-accent xl:text-3xl">4</div>
+                            <div data-typewriter-line class="font-mono text-xs text-ink/60">Proyectos destacados</div>
+                        </div>
+                        <div data-about-reveal data-typewriter data-trigger="manual" data-speed="65" data-delay="250"
+                            data-pause="100" class="space-y-2">
+                            <div data-typewriter-line class="font-display text-2xl text-accent xl:text-3xl">5</div>
+                            <div data-typewriter-line class="font-mono text-xs text-ink/60">Empresas en mi trayectoria
                             </div>
                         </div>
                     </div>
@@ -539,15 +360,821 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">© 2024 Iván Sánchez. Todos los derechos reservados.</p>
-            <p class="footer-subtext">Desarrollado con ❤️ y mucho café</p>
+
+    <template id="experience-data">
+        <details data-about-reveal class="experience-item border-b border-ink/20" id="experience-akaya">
+            <summary
+                class="experience-summary group grid items-center gap-5 rounded-2xl px-2 py-7 transition-colors hover:bg-ink/5 sm:px-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] lg:gap-8 lg:py-9">
+                <span class="flex min-w-0 items-center gap-4 sm:gap-6">
+                    <img src="assets/companies/akayamedia_logo.jpeg" alt="" width="64" height="64" loading="lazy"
+                        class="h-14 w-14 shrink-0 rounded-2xl bg-white object-contain sm:h-16 sm:w-16">
+                    <span class="min-w-0"><span
+                            class="block text-2xl font-medium leading-tight tracking-tight sm:text-3xl">Akaya
+                            Media</span><span class="mt-2 block text-sm text-ink/65">Desarrollador principal ·
+                            Web &amp; TI</span></span>
+                </span>
+                <span class="font-mono text-xs text-ink/65">May. 2024 — Actualidad<span
+                        class="mt-2 block text-[10px] uppercase tracking-widest text-accent">Remoto</span></span>
+                <span
+                    class="inline-flex min-h-11 w-fit items-center gap-3 rounded-full bg-accent py-1 pl-4 pr-1 font-mono text-[10px] uppercase tracking-wide text-coal">
+                    <span class="experience-open-label">Ver experiencia</span><span
+                        class="experience-close-label">Cerrar detalle</span>
+                    <span class="rounded-full bg-black p-2 text-white"><i data-lucide="arrow-up-right"
+                            class="experience-arrow h-5 w-5 transition-transform duration-500 group-hover:rotate-45"
+                            aria-hidden="true"></i></span>
+                </span>
+            </summary>
+            <div class="experience-detail px-2 pb-8 pt-2 sm:px-5 sm:pb-10">
+                <div
+                    class="grid gap-8 rounded-[2rem] bg-ink p-6 text-coal sm:p-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-12">
+                    <div>
+                        <p class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Trayectoria
+                            / 01</p>
+                        <h3 class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl">Desarrollo
+                            integral, infraestructura y liderazgo técnico.</h3>
+                        <p class="mt-5 text-sm text-coal/70">Akaya Media · Jornada completa · Monterrey, Nuevo
+                            León · Remoto</p>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">
+                            Tecnologías e integraciones</p>
+                        <ul aria-label="Tecnologías e integraciones" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Laravel 6 → 12</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">APIs</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Google Cloud</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Google Console</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">PayPal</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Stripe</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Piano.io</li>
+                        </ul>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Equipo
+                            y herramientas</p>
+                        <ul aria-label="Equipo y herramientas" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Figma</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Trello</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">ClickUp</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Azure (etapa previa)</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Discord</li>
+                        </ul>
+                        <a href="https://www.akayamedia.com/" target="_blank" rel="noopener noreferrer"
+                            class="moving-underline-link mt-6 inline-flex items-center gap-2 text-sm"><span
+                                class="moving-underline">Visitar Akaya Media</span><i data-lucide="arrow-up-right"
+                                class="h-4 w-4" aria-hidden="true"></i><span class="sr-only"> (abre en otra
+                                pestaña)</span></a>
+                    </div>
+                    <div>
+                        <h4 class="mb-5 font-mono text-xs uppercase tracking-widest">Responsabilidades</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Desarrollo web y APIs</h5>
+                                    <p class="mt-1 text-coal/75">Responsable principal del desarrollo,
+                                        mantenimiento y evolución de la plataforma y sus APIs.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Modernización con Laravel</h5>
+                                    <p class="mt-1 text-coal/75">Reconstrucción del sitio de Laravel 6 a Laravel
+                                        12, con un rediseño completo trabajado junto al equipo de diseño en
+                                        Figma.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Pagos y servicios externos</h5>
+                                    <p class="mt-1 text-coal/75">Integración de PayPal, Stripe y servicios de
+                                        terceros como Piano.io.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Infraestructura y entornos</h5>
+                                    <p class="mt-1 text-coal/75">Administración de Google Cloud, Google Console
+                                        y servidores; gestión de ambientes de pruebas y staging.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Automatización</h5>
+                                    <p class="mt-1 text-coal/75">Identificación de oportunidades e
+                                        implementación de mejoras para automatizar procesos.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Liderazgo y contratación</h5>
+                                    <p class="mt-1 text-coal/75">Supervisión de un desarrollador y participación
+                                        en entrevistas para incorporar nuevas personas a la empresa.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details data-about-reveal class="experience-item border-b border-ink/20" id="experience-codebay">
+            <summary
+                class="experience-summary group grid items-center gap-5 rounded-2xl px-2 py-7 transition-colors hover:bg-ink/5 sm:px-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] lg:gap-8 lg:py-9">
+                <span class="flex min-w-0 items-center gap-4 sm:gap-6">
+                    <img src="assets/companies/codebayus_logo.jpeg" alt="" width="64" height="64" loading="lazy"
+                        class="h-14 w-14 shrink-0 rounded-2xl bg-white object-contain sm:h-16 sm:w-16">
+                    <span class="min-w-0"><span
+                            class="block text-2xl font-medium leading-tight tracking-tight sm:text-3xl">Codebay</span><span
+                            class="mt-2 block text-sm text-ink/65">Software Engineer PHP</span></span>
+                </span>
+                <span class="font-mono text-xs text-ink/65">Nov. 2022 — May. 2024<span
+                        class="mt-2 block text-[10px] uppercase tracking-widest text-accent">Remoto</span></span>
+                <span
+                    class="inline-flex min-h-11 w-fit items-center gap-3 rounded-full bg-accent py-1 pl-4 pr-1 font-mono text-[10px] uppercase tracking-wide text-coal">
+                    <span class="experience-open-label">Ver experiencia</span><span
+                        class="experience-close-label">Cerrar detalle</span>
+                    <span class="rounded-full bg-black p-2 text-white"><i data-lucide="arrow-up-right"
+                            class="experience-arrow h-5 w-5 transition-transform duration-500 group-hover:rotate-45"
+                            aria-hidden="true"></i></span>
+                </span>
+            </summary>
+            <div class="experience-detail px-2 pb-8 pt-2 sm:px-5 sm:pb-10">
+                <div
+                    class="grid gap-8 rounded-[2rem] bg-ink p-6 text-coal sm:p-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-12">
+                    <div>
+                        <p class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Trayectoria
+                            / 02</p>
+                        <h3 class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl">Software a
+                            medida para distintos proyectos y necesidades.</h3>
+                        <p class="mt-5 text-sm text-coal/70">Codebay · Remoto</p>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">
+                            Tecnologías e integraciones</p>
+                        <ul aria-label="Tecnologías e integraciones" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">PHP</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Laravel</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">React</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">APIs REST</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">SOAP</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Pasarelas de pago</li>
+                        </ul>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Equipo
+                            y herramientas</p>
+                        <ul aria-label="Equipo y herramientas" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Azure</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Scrum</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Slack</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <nav aria-label="Enlaces de la empresa" class="mb-8 flex flex-wrap gap-x-6 gap-y-3"><a
+                                href="https://www.linkedin.com/company/codebayus" target="_blank"
+                                rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">Codebay en LinkedIn</span><i data-lucide="arrow-up-right"
+                                    class="h-4 w-4" aria-hidden="true"></i><span class="sr-only"> (abre en otra
+                                    pestaña)</span></a></nav>
+                        <h4 class="mb-5 font-mono text-xs uppercase tracking-widest">Responsabilidades</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Desarrollo a medida</h5>
+                                    <p class="mt-1 text-coal/75">Participación en distintos proyectos con
+                                        diferentes versiones de Laravel, incluyendo la creación de nuevos
+                                        módulos.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Integración de servicios</h5>
+                                    <p class="mt-1 text-coal/75">Conexión de APIs REST y SOAP, servicios de
+                                        terceros y pasarelas de pago.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Frontend y mantenimiento</h5>
+                                    <p class="mt-1 text-coal/75">Trabajo con React en algunos proyectos y
+                                        evolución de sistemas existentes.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Trabajo en equipo</h5>
+                                    <p class="mt-1 text-coal/75">Desarrollo bajo Scrum, utilizando Azure y Slack
+                                        para la gestión y colaboración.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details data-about-reveal class="experience-item border-b border-ink/20" id="experience-alaya">
+            <summary
+                class="experience-summary group grid items-center gap-5 rounded-2xl px-2 py-7 transition-colors hover:bg-ink/5 sm:px-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] lg:gap-8 lg:py-9">
+                <span class="flex min-w-0 items-center gap-4 sm:gap-6">
+                    <img src="assets/companies/alayamx_logo.jpeg" alt="" width="64" height="64" loading="lazy"
+                        class="h-14 w-14 shrink-0 rounded-2xl bg-white object-contain sm:h-16 sm:w-16">
+                    <span class="min-w-0"><span
+                            class="block text-2xl font-medium leading-tight tracking-tight sm:text-3xl">alaya</span><span
+                            class="mt-2 block text-sm text-ink/65">Analista Programador · Responsable de
+                            TI</span></span>
+                </span>
+                <span class="font-mono text-xs text-ink/65">Ago. 2021 — Nov. 2022<span
+                        class="mt-2 block text-[10px] uppercase tracking-widest text-accent">Híbrido</span></span>
+                <span
+                    class="inline-flex min-h-11 w-fit items-center gap-3 rounded-full bg-accent py-1 pl-4 pr-1 font-mono text-[10px] uppercase tracking-wide text-coal">
+                    <span class="experience-open-label">Ver experiencia</span><span
+                        class="experience-close-label">Cerrar detalle</span>
+                    <span class="rounded-full bg-black p-2 text-white"><i data-lucide="arrow-up-right"
+                            class="experience-arrow h-5 w-5 transition-transform duration-500 group-hover:rotate-45"
+                            aria-hidden="true"></i></span>
+                </span>
+            </summary>
+            <div class="experience-detail px-2 pb-8 pt-2 sm:px-5 sm:pb-10">
+                <div
+                    class="grid gap-8 rounded-[2rem] bg-ink p-6 text-coal sm:p-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-12">
+                    <div>
+                        <p class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Trayectoria
+                            / 03</p>
+                        <h3 class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl">Gestión de TI,
+                            implementación de Salesforce y formación.</h3>
+                        <p class="mt-5 text-sm text-coal/70">alaya · Agente de fianzas y seguros · Jornada
+                            completa · Guadalajara, Jalisco · Híbrido</p>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Áreas
+                            de experiencia</p>
+                        <ul aria-label="Áreas de experiencia" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Salesforce</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Product Owner</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Desarrollo</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Gestión de TI</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Capacitación</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Seguridad tecnológica</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <nav aria-label="Enlaces de la empresa" class="mb-8 flex flex-wrap gap-x-6 gap-y-3"><a
+                                href="https://alayafs.com/" target="_blank" rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">alaya</span><i data-lucide="arrow-up-right" class="h-4 w-4"
+                                    aria-hidden="true"></i><span class="sr-only"> (abre en otra pestaña)</span></a>
+                        </nav>
+                        <h4 class="mb-5 font-mono text-xs uppercase tracking-widest">Responsabilidades</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Salesforce como Product Owner</h5>
+                                    <p class="mt-1 text-coal/75">Implementación de Salesforce en coordinación
+                                        con un equipo de Argentina y configuración a medida según las
+                                        necesidades de la empresa.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Operación de TI</h5>
+                                    <p class="mt-1 text-coal/75">Responsabilidad sobre el área de TI, control de
+                                        los dispositivos de la empresa, administración de sistemas y soporte
+                                        técnico.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Desarrollo y renovación web</h5>
+                                    <p class="mt-1 text-coal/75">Desarrollo de soluciones y gestión de la
+                                        renovación del sitio web con desarrolladores externos.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Formación interna</h5>
+                                    <p class="mt-1 text-coal/75">Cursos como instructor sobre tecnología,
+                                        seguridad y uso de herramientas.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details data-about-reveal class="experience-item border-b border-ink/20" id="experience-random">
+            <summary
+                class="experience-summary group grid items-center gap-5 rounded-2xl px-2 py-7 transition-colors hover:bg-ink/5 sm:px-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] lg:gap-8 lg:py-9">
+                <span class="flex min-w-0 items-center gap-4 sm:gap-6">
+                    <img src="assets/companies/random_logo.png" alt="" width="64" height="64" loading="lazy"
+                        class="h-14 w-14 shrink-0 rounded-2xl bg-white object-contain sm:h-16 sm:w-16">
+                    <span class="min-w-0"><span
+                            class="block text-2xl font-medium leading-tight tracking-tight sm:text-3xl">Sitio
+                            Random</span><span class="mt-2 block text-sm text-ink/65">Desarrollador Laravel ·
+                            Liderazgo de equipo</span></span>
+                </span>
+                <span class="font-mono text-xs text-ink/65">Ago. 2020 — Ago. 2021<span
+                        class="mt-2 block text-[10px] uppercase tracking-widest text-accent">Presencial</span></span>
+                <span
+                    class="inline-flex min-h-11 w-fit items-center gap-3 rounded-full bg-accent py-1 pl-4 pr-1 font-mono text-[10px] uppercase tracking-wide text-coal">
+                    <span class="experience-open-label">Ver experiencia</span><span
+                        class="experience-close-label">Cerrar detalle</span>
+                    <span class="rounded-full bg-black p-2 text-white"><i data-lucide="arrow-up-right"
+                            class="experience-arrow h-5 w-5 transition-transform duration-500 group-hover:rotate-45"
+                            aria-hidden="true"></i></span>
+                </span>
+            </summary>
+            <div class="experience-detail px-2 pb-8 pt-2 sm:px-5 sm:pb-10">
+                <div
+                    class="grid gap-8 rounded-[2rem] bg-ink p-6 text-coal sm:p-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-12">
+                    <div>
+                        <p class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Trayectoria
+                            / 04</p>
+                        <h3 class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl">Desarrollo
+                            conectado al negocio y a sus canales de venta.</h3>
+                        <p class="mt-5 text-sm text-coal/70">Sitio Random Marketing Digital · Jornada completa ·
+                            México · Presencial</p>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">
+                            Tecnologías e integraciones</p>
+                        <ul aria-label="Tecnologías e integraciones" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Laravel</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">WordPress</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">APIs</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Mercado Libre</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Liverpool</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Walmart</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Claro Shop</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Sears</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Shopify</li>
+                        </ul>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Equipo
+                            y herramientas</p>
+                        <ul aria-label="Equipo y herramientas" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Hosting / Servidores</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Scrum</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Slack</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Asana</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <nav aria-label="Enlaces de la empresa" class="mb-8 flex flex-wrap gap-x-6 gap-y-3"><a
+                                href="https://sitiorandom.com/" target="_blank" rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">Sitio Random</span><i data-lucide="arrow-up-right"
+                                    class="h-4 w-4" aria-hidden="true"></i><span class="sr-only"> (abre en otra
+                                    pestaña)</span></a></nav>
+                        <h4 class="mb-5 font-mono text-xs uppercase tracking-widest">Responsabilidades</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Desarrollo con Laravel</h5>
+                                    <p class="mt-1 text-coal/75">Implementación de soluciones a partir de
+                                        diseños y necesidades del cliente.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Integraciones de e-commerce</h5>
+                                    <p class="mt-1 text-coal/75">Conexión con APIs de Mercado Libre, Liverpool,
+                                        Walmart, Claro Shop, Sears y Shopify.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Liderazgo y trato con clientes</h5>
+                                    <p class="mt-1 text-coal/75">Supervisión de desarrolladores y colaboración
+                                        directa con el cliente para definir soluciones adecuadas a su negocio.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">WordPress e infraestructura</h5>
+                                    <p class="mt-1 text-coal/75">Actualización, renovación y mantenimiento de
+                                        sitios en WordPress; administración de hosting y servidores.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Organización del trabajo</h5>
+                                    <p class="mt-1 text-coal/75">Desarrollo bajo Scrum, con Asana y Slack como
+                                        herramientas de gestión y comunicación.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </details>
+        <details data-about-reveal class="experience-item border-b border-ink/20" id="experience-importserv">
+            <summary
+                class="experience-summary group grid items-center gap-5 rounded-2xl px-2 py-7 transition-colors hover:bg-ink/5 sm:px-5 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_auto] lg:gap-8 lg:py-9">
+                <span class="flex min-w-0 items-center gap-4 sm:gap-6">
+                    <img src="assets/companies/importserver_logo.webp" alt="" width="64" height="64" loading="lazy"
+                        class="h-14 w-14 shrink-0 rounded-2xl bg-white object-contain sm:h-16 sm:w-16">
+                    <span class="min-w-0"><span
+                            class="block text-2xl font-medium leading-tight tracking-tight sm:text-3xl">Importserv
+                            Internationals</span><span class="mt-2 block text-sm text-ink/65">Desarrollador web
+                            y de escritorio</span></span>
+                </span>
+                <span class="font-mono text-xs text-ink/65">Ago. 2019 — Jun. 2020<span
+                        class="mt-2 block text-[10px] uppercase tracking-widest text-accent">Presencial</span></span>
+                <span
+                    class="inline-flex min-h-11 w-fit items-center gap-3 rounded-full bg-accent py-1 pl-4 pr-1 font-mono text-[10px] uppercase tracking-wide text-coal">
+                    <span class="experience-open-label">Ver experiencia</span><span
+                        class="experience-close-label">Cerrar detalle</span>
+                    <span class="rounded-full bg-black p-2 text-white"><i data-lucide="arrow-up-right"
+                            class="experience-arrow h-5 w-5 transition-transform duration-500 group-hover:rotate-45"
+                            aria-hidden="true"></i></span>
+                </span>
+            </summary>
+            <div class="experience-detail px-2 pb-8 pt-2 sm:px-5 sm:pb-10">
+                <div
+                    class="grid gap-8 rounded-[2rem] bg-ink p-6 text-coal sm:p-10 lg:grid-cols-[minmax(0,0.75fr)_minmax(0,1.25fr)] lg:gap-12">
+                    <div>
+                        <p class="mb-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">Trayectoria
+                            / 05</p>
+                        <h3 class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl">Inventarios,
+                            puntos de venta y soporte en tienda.</h3>
+                        <p class="mt-5 text-sm text-coal/70">Importserv Internationals · Jornada completa ·
+                            México · Presencial</p>
+                        <p class="mb-3 mt-6 font-mono text-[10px] uppercase tracking-widest text-coal/60">
+                            Tecnologías y áreas</p>
+                        <ul aria-label="Tecnologías y áreas" class="flex flex-wrap gap-2 font-mono text-[10px]">
+                            <li class="rounded-full border border-coal/25 px-3 py-2">PHP</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Pascal</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Lazarus</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Inventarios</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Puntos de venta</li>
+                            <li class="rounded-full border border-coal/25 px-3 py-2">Soporte técnico</li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <nav aria-label="Enlaces de la empresa" class="mb-8 flex flex-wrap gap-x-6 gap-y-3"><a
+                                href="https://importserv.com/" target="_blank" rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">Importserv</span><i data-lucide="arrow-up-right"
+                                    class="h-4 w-4" aria-hidden="true"></i><span class="sr-only"> (abre en otra
+                                    pestaña)</span></a><a href="https://www.dsfactura.com/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">DS Factura · Tienda con soporte de TI</span><i
+                                    data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i><span
+                                    class="sr-only"> (abre en otra pestaña)</span></a><a
+                                href="https://frequentflyer.com.mx/" target="_blank" rel="noopener noreferrer"
+                                class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                                    class="moving-underline">Frequent Flyer · Sitio relacionado</span><i
+                                    data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i><span
+                                    class="sr-only"> (abre en otra pestaña)</span></a></nav>
+                        <h4 class="mb-5 font-mono text-xs uppercase tracking-widest">Responsabilidades</h4>
+                        <ul class="space-y-4">
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Sistemas de inventario</h5>
+                                    <p class="mt-1 text-coal/75">Desarrollo en PHP puro de sistemas para el
+                                        control de inventarios.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Aplicaciones de escritorio</h5>
+                                    <p class="mt-1 text-coal/75">Desarrollo de puntos de venta con Pascal y
+                                        Lazarus.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Soporte técnico</h5>
+                                    <p class="mt-1 text-coal/75">Mantenimiento de equipos de cómputo y
+                                        reparación de impresoras.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                                <div>
+                                    <h5 class="font-semibold">Operación en campo</h5>
+                                    <p class="mt-1 text-coal/75">Realización de inventarios en tiendas de
+                                        diferentes estados del país.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <details class="experience-item" id="experience-kinali" data-engagement="external">
+            <summary>
+                <img src="assets/proyects/kinali_works-1.webp" alt="" width="64" height="64">
+                <span class="min-w-0"><span class="block">Kinali Works</span><span class="mt-2 block">Desarrollador web
+                        externo</span></span>
+                <span class="font-mono text-xs">Colaboración externa<span>Por proyecto</span></span>
+            </summary>
+            <div class="experience-detail">
+                <h3>Dos sitios, una colaboración con el equipo del estudio.</h3>
+                <p class="mt-5">Trabajo independiente de mi empleo, en coordinación con Kinali Works.</p>
+                <ul aria-label="Tecnologías y áreas de colaboración">
+                    <li>Next.js</li>
+                    <li>Vite</li>
+                    <li>Migración web</li>
+                    <li>Servidores</li>
+                    <li>Colaboración externa</li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                        <div>
+                            <h5 class="font-semibold">Kinali Works</h5>
+                            <p class="mt-1 text-coal/75">Migración del sitio de WordPress a Next.js y renovación de la
+                                interfaz conservando la identidad del estudio.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                        <div>
+                            <h5 class="font-semibold">Alma Stone</h5>
+                            <p class="mt-1 text-coal/75">Desarrollo desde cero con Vite del sitio oficial del
+                                videojuego.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-3 border-b border-coal/15 pb-4"><span aria-hidden="true">↗</span>
+                        <div>
+                            <h5 class="font-semibold">Coordinación y despliegue</h5>
+                            <p class="mt-1 text-coal/75">Coordinación de cambios con el equipo de Kinali y migración de
+                                ambos proyectos a nuevos servidores.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://kinaliworks.com/" target="_blank" rel="noopener noreferrer"
+                    class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                        class="moving-underline">Kinali Works</span><i data-lucide="arrow-up-right" class="h-4 w-4"
+                        aria-hidden="true"></i><span class="sr-only"> (abre en otra pestaña)</span></a>
+                <a href="https://almastonegame.com/" target="_blank" rel="noopener noreferrer"
+                    class="moving-underline-link inline-flex items-center gap-2 text-sm"><span
+                        class="moving-underline">Alma Stone</span><i data-lucide="arrow-up-right" class="h-4 w-4"
+                        aria-hidden="true"></i><span class="sr-only"> (abre en otra pestaña)</span></a>
+            </div>
+        </details>
+    </template>
+
+
+    <div data-arc-transition class="arc-transition arc-transition-to-experience bg-ink" aria-hidden="true">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" focusable="false">
+            <path data-arc-path fill="#171a1b" d="M0 100 Q500 -100 1000 100 L1000 101 L0 101 Z" />
+        </svg>
+    </div>
+
+    <section id="experience" aria-labelledby="experience-title"
+        class="bg-coal px-5 py-20 text-ink sm:px-10 lg:px-14 lg:py-28">
+        <div class="mx-auto max-w-[90rem]">
+            <header data-about-reveal data-typewriter data-trigger="manual" data-speed="22" data-delay="150"
+                data-pause="120" class="companion-section-header section-frame section-frame-right mb-14 sm:mb-20">
+                <div class="section-rail" data-about-reveal><span class="section-rail-label">Trayectoria</span><span
+                        class="section-rail-line" aria-hidden="true"></span></div>
+                <div id="companion-experience-dock" class="companion-dock" aria-hidden="true"></div>
+                <div
+                    class="mb-8 flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-widest text-muted">
+                    <p data-typewriter-line>Experiencia / 2019 — Hoy</p>
+                    <p data-typewriter-line class="text-accent">05 empresas · Una trayectoria</p>
+                </div>
+                <h2 id="experience-title"
+                    class="max-w-5xl text-[clamp(3rem,7vw,7rem)] font-medium leading-[0.98] tracking-[-0.05em]"><span
+                        data-typewriter-line class="block">Código, equipos</span><span data-typewriter-line
+                        class="block">y evolución.</span></h2>
+                <p data-typewriter-line class="mt-8 max-w-xl text-lg text-ink/70">Desarrollo web, integración de
+                    sistemas y operación de TI.
+                    Un recorrido por las empresas donde he trabajado.</p>
+            </header>
+
+
+            <div class="experience-workspace">
+                <div id="experience-v2-stage" class="job-stage" aria-label="Seleccionar empresa"></div>
+                <div id="experience-v2-detail" aria-label="Detalle de la empresa seleccionada"></div>
+            </div>
+            <noscript>
+                <p>Activa JavaScript para explorar mi experiencia profesional.</p>
+            </noscript>
+
+
+
+        </div>
+    </section>
+
+    <div data-arc-transition class="arc-transition arc-transition-to-projects" aria-hidden="true">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" focusable="false">
+            <path data-arc-path fill="#f3f0e8" d="M0 100 Q500 -100 1000 100 L1000 101 L0 101 Z" />
+        </svg>
+    </div>
+
+    <section id="projects" aria-labelledby="projects-title" class="projects-section bg-ink text-coal">
+        <header data-about-reveal
+            class="companion-section-header projects-header section-frame section-frame-left section-frame-light">
+            <div class="section-rail" data-about-reveal><span class="section-rail-label">Proyectos
+                    destacados</span><span class="section-rail-line" aria-hidden="true"></span></div>
+            <div id="companion-projects-dock" class="companion-dock" aria-hidden="true"></div>
+            <p class="mb-6 font-mono text-xs uppercase tracking-widest text-coal/60">Proyectos destacados / 04</p>
+            <h2 id="projects-title" class="text-[clamp(3rem,6vw,6rem)] font-medium leading-none tracking-tight">Ideas
+                que ya<br>están en la web.</h2>
+            <p class="project-header-description mt-6 max-w-lg text-lg text-coal/70">De la primera línea de código a
+                producción. Cuatro
+                proyectos, distintas necesidades.</p>
+        </header>
+        <div class="project-picker" aria-label="Elegir proyecto">
+            <button type="button" data-project-index="0" aria-pressed="true">Akaya</button>
+            <button type="button" data-project-index="1" aria-pressed="false">Alma Stone</button>
+            <button type="button" data-project-index="2" aria-pressed="false">Kinali Works</button>
+            <button type="button" data-project-index="3" aria-pressed="false">GOCO</button>
+        </div>
+        <div id="project-carousel" class="project-viewport" data-drag-surface tabindex="0" role="region"
+            aria-roledescription="carrusel"
+            aria-label="Proyectos destacados. Usa las flechas del teclado o arrastra para explorar.">
+            <div class="project-orbit" aria-hidden="true"></div>
+            <div class="project-cards">
+                <article class="project-card" style="--project-color: 213 7 47; --project-ink: 255 255 255"
+                    aria-roledescription="diapositiva" aria-label="1 de 4: Akaya">
+
+
+                    <div class="project-card-content">
+                        <div class="project-card-top"><span>Proyecto / 01</span><span>↗</span></div>
+
+                        <div class="project-card-copy">
+                            <img class="project-brand" src="assets/companies/akayamedia_logo.jpeg" alt="Akaya Media"
+                                width="56" height="56" loading="lazy" draggable="false">
+                            <p class="project-tech">Laravel · Webcómics</p>
+                            <h3>Akaya</h3>
+                            <p class="project-description">Plataforma reconstruida con Laravel: nueva interfaz, APIs
+                                actualizadas y procesos automatizados.</p>
+                            <p class="project-credit">Desarrollo principal · Un desarrollador a cargo</p>
+
+                        </div>
+                        <div class="project-visual">
+                            <div class="project-preview">
+                                <img class="project-thumbnail" src="assets/screen_shots/akaya.png"
+                                    alt="Captura del proyecto Akaya" loading="lazy" draggable="false">
+                            </div>
+                            <a href="https://akaya.io/" target="_blank" rel="noopener noreferrer"
+                                class="project-link moving-underline-link group">
+                                <span class="moving-underline">Visitar sitio</span>
+                                <span class="project-link-orb" aria-hidden="true">
+                                    <i data-lucide="arrow-right"
+                                        class="w-5 h-5 group-hover:-rotate-45 transition-all duration-150"></i>
+                                </span>
+                                <span class="sr-only"> de Akaya (abre en otra
+                                    pestaña)</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" style="--project-color: 141 112 199; --project-ink: 16 18 18"
+                    aria-roledescription="diapositiva" aria-label="2 de 4: Alma Stone">
+
+
+                    <div class="project-card-content">
+                        <div class="project-card-top"><span>Proyecto / 02</span><span>↗</span></div>
+
+                        <div class="project-card-copy">
+                            <img class="project-brand" src="assets/proyects/kinali_works-1.webp" alt="Kinali Works"
+                                width="56" height="56" loading="lazy" draggable="false">
+                            <p class="project-tech">Vite · Videojuegos</p>
+                            <h3>Alma Stone</h3>
+                            <p class="project-description">Sitio oficial creado desde cero con Vite, coordinando con el
+                                equipo de Kinali la implementación y el despliegue en nuevos servidores.</p>
+                            <p class="project-credit">Desarrollador externo · Colaboración con el equipo de Kinali</p>
+
+                        </div>
+                        <div class="project-visual">
+                            <div class="project-preview"><img class="project-thumbnail"
+                                    src="assets/screen_shots/alma_stone.png" alt="Captura del proyecto Alma Stone"
+                                    loading="lazy" draggable="false"></div>
+                            <a href="https://almastonegame.com/" target="_blank" rel="noopener noreferrer"
+                                class="project-link moving-underline-link group">
+                                <span class="moving-underline">Visitar
+                                    sitio</span>
+                                <span class="project-link-orb" aria-hidden="true">
+                                    <i data-lucide="arrow-right"
+                                        class="w-5 h-5 group-hover:-rotate-45 transition-all duration-150"></i>
+                                </span>
+                                <span class="sr-only"> de Alma Stone (abre en otra pestaña)</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" style="--project-color: 55 178 230; --project-ink: 16 18 18"
+                    aria-roledescription="diapositiva" aria-label="3 de 4: Kinali Works">
+
+
+                    <div class="project-card-content">
+                        <div class="project-card-top"><span>Proyecto / 03</span><span>↗</span></div>
+
+                        <div class="project-card-copy">
+                            <img class="project-brand" src="assets/proyects/kinali_works-1.webp" alt="Kinali Works"
+                                width="56" height="56" loading="lazy" draggable="false">
+                            <p class="project-tech">Next.js · Migración</p>
+                            <h3>Kinali Works</h3>
+                            <p class="project-description">Migración de WordPress a Next.js, renovando la interfaz y
+                                coordinando con el equipo de Kinali los cambios y el traslado a nuevos servidores.</p>
+                            <p class="project-credit">Desarrollador externo · Colaboración con el equipo de Kinali</p>
+
+                        </div>
+                        <div class="project-visual">
+                            <div class="project-preview"><img class="project-thumbnail"
+                                    src="assets/screen_shots/kinali.png" alt="Captura del proyecto Kinali Works"
+                                    loading="lazy" draggable="false"></div>
+                            <a href="https://kinaliworks.com/" target="_blank" rel="noopener noreferrer"
+                                class="project-link moving-underline-link group">
+                                <span class="moving-underline">Visitar
+                                    sitio
+                                </span>
+                                <span class="project-link-orb" aria-hidden="true">
+                                    <i data-lucide="arrow-right"
+                                        class="w-5 h-5 group-hover:-rotate-45 transition-all duration-150"></i>
+                                </span>
+                                <span class="sr-only"> de Kinali Works (abre en otra pestaña)</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" style="--project-color: 91 85 159; --project-ink: 255 255 255"
+                    aria-roledescription="diapositiva" aria-label="4 de 4: GOCO">
+
+
+                    <div class="project-card-content">
+                        <div class="project-card-top"><span>Proyecto / 04</span><span>↗</span></div>
+
+                        <div class="project-card-copy">
+                            <img class="project-brand" src="assets/companies/random_logo.png" alt="Sitio Random"
+                                width="56" height="56" loading="lazy" draggable="false">
+                            <p class="project-tech">Laravel · E-commerce</p>
+                            <h3>GOCO</h3>
+                            <p class="project-description">Ventas, productos e inventarios de distintos e-commerces,
+                                conectados en una sola plataforma.</p>
+                            <p class="project-credit">Desarrollo individual</p>
+
+                        </div>
+                        <div class="project-visual">
+                            <div class="project-preview"><img class="project-thumbnail"
+                                    src="assets/screen_shots/goco.png" alt="Captura del proyecto GOCO" loading="lazy"
+                                    draggable="false"></div>
+                            <a href="https://goco.mx/" target="_blank" rel="noopener noreferrer"
+                                class="project-link moving-underline-link group">
+                                <span class="moving-underline">Visitar sitio</span>
+                                <span class="project-link-orb" aria-hidden="true">
+                                    <i data-lucide="arrow-right"
+                                        class="w-5 h-5 group-hover:-rotate-45 transition-all duration-150"></i>
+                                </span>
+                                <span class="sr-only"> de GOCO (abre en otra
+                                    pestaña)</span></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="project-controls">
+            <button type="button" data-project-prev aria-label="Proyecto anterior">←</button>
+            <p id="project-status" role="status" aria-live="polite" aria-atomic="true">01 / 04 · Akaya</p>
+            <button type="button" data-project-next aria-label="Proyecto siguiente">→</button>
+        </div>
+        <p class="project-hint">Arrastra para explorar · También puedes usar las flechas</p>
+    </section>
+
+    <div data-arc-transition class="arc-transition arc-transition-to-footer" aria-hidden="true">
+        <svg viewBox="0 0 1000 100" preserveAspectRatio="none" focusable="false">
+            <path data-arc-path fill="#171a1b" d="M0 100 Q500 -100 1000 100 L1000 101 L0 101 Z" />
+        </svg>
+    </div>
+    <footer id="contact-footer" class="contact-footer" aria-labelledby="footer-title">
+        <div class="footer-topline">
+            <p>Full Stack Developer<br>Web · APIs · Infraestructura</p>
+            <p>Guadalajara, México<br>Trabajo remoto</p>
+        </div>
+        <div class="footer-frame section-frame section-frame-right">
+            <div class="section-rail" data-about-reveal><span class="section-rail-label">Hablemos</span><span
+                    class="section-rail-line" aria-hidden="true"></span></div>
+            <div data-about-reveal data-typewriter data-trigger="manual" data-speed="38" data-delay="150"
+                data-pause="120" class="footer-invitation">
+                <p data-typewriter-line class="footer-eyebrow">De una idea a lo que sigue.</p>
+                <h2 id="footer-title"><span data-typewriter-line class="block">¿Construimos</span><span
+                        data-typewriter-line class="block">algo juntos?</span></h2>
+            </div>
+            <div id="companion-footer-dock" aria-hidden="true"></div>
+            <p class="footer-contact-note">Encuentra mis datos y redes en Sobre mí.</p>
+            <a href="mailto:ivanusanchezm@gmail.com" class="moving-underline-link footer-email"><span
+                    class="moving-underline">ivanusanchezm@gmail.com</span></a>
+            <noscript><a href="#about-profile">Contáctame</a></noscript>
+        </div>
+        <div class="footer-bottom">
+            <button type="button" id="footer-credit" class="footer-credit" aria-expanded="false"
+                aria-controls="footer-credit-extra">
+                <span>© Code by Iván </span>
+                <span id="footer-credit-extra" class="footer-credit-extra flex items-center gap-2" aria-hidden="true">
+                    <span class="ml-1"> and codex 
+                        <span aria-hidden="true">✳</span>
+                    </span>
+                </span>
+            </button>
+            <p data-about-reveal class="footer-copyright">© 2026 Iván Sánchez. Todos los derechos reservados.</p>
+            <a href="#hero" data-scroll-duration="1600" class="moving-underline-link footer-top-link"><span
+                    class="moving-underline">Volver al inicio</span><span aria-hidden="true">↑</span></a>
         </div>
     </footer>
 
+    <div id="site-cursor" aria-hidden="true"><i data-lucide="arrow-up-right"></i></div>
+
+    <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+    <script src="assets/vendor/lucide-icons.js"></script>
+    <script src="experience-v2.js"></script>
+    <script src="navigation.js"></script>
     <script src="script.js"></script>
+    <script src="companion.js"></script>
+    <script src="projects.js"></script>
 </body>
 
 </html>
