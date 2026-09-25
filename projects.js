@@ -99,7 +99,11 @@
     }
     viewport.addEventListener('pointerup', release);
     viewport.addEventListener('pointercancel', release);
-    viewport.addEventListener('lostpointercapture', release);
+    viewport.addEventListener('lostpointercapture', event => {
+        // La captura táctil implícita del hijo se pierde al transferirla al carrusel.
+        // Ese evento burbujea, pero el gesto sigue activo en el viewport.
+        if (event.target === viewport) release(event);
+    });
     viewport.addEventListener('click', event => {
         if (suppressClick) { event.preventDefault(); event.stopPropagation(); suppressClick = false; }
     }, true);
