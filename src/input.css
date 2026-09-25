@@ -770,3 +770,9 @@ html.job-modal-open #site-cursor { opacity: 0; }
 ::selection { color: rgb(var(--on-accent, 0 0 0)); }
 .text-accent, .hover\:text-accent:hover { color: rgb(var(--accent-readable, var(--accent))); }
 .bg-accent.hover\:bg-black:hover, .bg-accent.focus-visible\:bg-black:focus-visible { color: #fff; }
+
+/* Las tarjetas recortadas también deben permitir el gesto horizontal personalizado. */
+.project-viewport.is-ready .project-cards,
+.project-viewport.is-ready .project-card,
+.project-viewport.is-ready .project-card a { touch-action: pan-y pinch-zoom; }
+.project-viewport.is-ready img { -webkit-user-drag: none; user-select: none; }

@@ -61,9 +61,9 @@
     viewport.addEventListener('pointerdown', event => {
         if (!event.isPrimary || event.button !== 0) return;
         suppressClick = false;
-        if (event.target.closest('a, button')) return;
+        if (event.pointerType === 'mouse' && event.target.closest('a, button')) return;
         cancelAnimationFrame(frame); frame = 0;
-        drag = {id: event.pointerId, x: event.clientX, y: event.clientY, start: position, moved: false};
+        drag = {id: event.pointerId, x: event.clientX, y: event.clientY, start: position, dx: 0, moved: false};
     });
     viewport.addEventListener('pointermove', event => {
         if (!drag || drag.id !== event.pointerId) return;
@@ -75,17 +75,27 @@
             viewport.setPointerCapture(event.pointerId);
             viewport.classList.add('is-dragging');
         }
+        drag.dx = dx;
         position = drag.start - dx / stepPixels;
         render();
     });
     function release(event) {
         if (!drag || drag.id !== event.pointerId) return;
-        const moved = drag.moved;
+        const {moved, dx, start} = drag;
+        const cancelled = event.type === 'pointercancel' || event.type === 'lostpointercapture';
+        let next = destination;
+        if (moved && !cancelled) {
+            next = Math.round(position);
+            // Un gesto corto cambia de tarjeta sin exigir arrastrar media pantalla.
+            if (Math.abs(dx) >= 40 && next === Math.round(start)) {
+                next = Math.round(start) - Math.sign(dx);
+            }
+        }
         drag = null;
         viewport.classList.remove('is-dragging');
         suppressClick = moved;
         if (viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
-        select(moved ? position : destination);
+        select(next);
     }
     viewport.addEventListener('pointerup', release);
     viewport.addEventListener('pointercancel', release);
